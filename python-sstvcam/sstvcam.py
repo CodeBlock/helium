@@ -3,7 +3,7 @@
 # MIT Licensed.
 # This file is part of the Helium project.
 
-from sh import aplay, convert, robot36_encode, raspistill
+from sh import aplay, convert, raspistill, robot36_encode
 
 cwd = '/tmp/'
 
