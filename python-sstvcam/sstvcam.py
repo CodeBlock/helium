@@ -17,14 +17,19 @@ def convert_picture_to_ppm():
     '''Convert latest.jpg to a PPM (latest.ppm).'''
     convert("latest.jpg", "latest.ppm", _cwd=cwd)
 
-def overlay_text(text, top_or_bottom):
+def overlay_text(text, position):
     '''Overlay text on latest.ppm.
        We do this twice so that it's readable in light and dark images.
+
+       The position argument must be either 'top' or 'bottom'.
     '''
-    if top_or_bottom == 'top':
+    if position == 'top':
         (y1, y2) = (15, 16)
-    else:
+    elif position == 'bottom':
         (y1, y2) = (235, 236)
+    else:
+        raise Exception("argument 'position' must be 'top' or 'bottom'")
+
     convert(
         "latest.ppm",
         "-pointsize", "18",
