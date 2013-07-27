@@ -1,0 +1,7 @@
+# This is a file that contains any information specific to an event or
+# organization in which a script will be used. Scripts can load this file
+# instead of needing to hardcode information.
+
+name: University of Akron Amateur Radio Club
+project: Balloon 2
+callsign: W8UPD
