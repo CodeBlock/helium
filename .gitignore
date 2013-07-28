@@ -1,1 +1,6 @@
 config.yml
+
+# Helpful for building in the local copy:
+helium-master
+*.tar.gz
+*.rpm
