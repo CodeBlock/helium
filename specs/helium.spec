@@ -13,6 +13,7 @@ which assist with High Altitude Balloon launches.
 %package -n python-sstvcam
 Summary:        A library for preparing images (taken from the RPi camera) to send via SSTV
 BuildArch:      noarch
+BuildRequires:  python-devel
 Requires:       %{name} = %{version}-%{release}
 Requires:       alsa-utils
 Requires:       ImageMagick
